@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.futuristic-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; }
+    to { text-shadow: 0 0 20px #ff00cc, 0 0 30px #ff00cc; }
+}
+
+.post, .reel, .search-result, .message, .ad {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 8px 32px rgba(0, 255, 204, 0.2);
+    transition: transform 0.3s;
+}
+
+.post:hover, .reel:hover {
+    transform: translateY(-5px);
+}
+
+.post img, .reel video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.post-actions, .comments {
+    margin-top: 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #00ffcc, #ff00cc);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.search-bar, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.nav-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.nav-btn.active, .nav-btn:hover {
+    background: linear-gradient(45deg, #00ffcc, #ff00cc);
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #00ffcc;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+}
+
+.admin-btn {
+    background: linear-gradient(45deg, #ff00cc, #00ffcc);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+    transition: transform 0.2s;
+}
+
+.admin-btn:hover {
+    transform: scale(1.1);
+}
