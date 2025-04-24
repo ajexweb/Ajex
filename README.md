@@ -1,2 +1,0 @@
-# Ajex
-Ajex 
